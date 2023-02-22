@@ -9,8 +9,9 @@ if window.get_active_class().endswith("firefox"):
   time.sleep(0.1)
   keyboard.send_keys("<ctrl>+c")
   
+  time.sleep(0.1)
 
-  window.activate("Telegram")
+  window.activate("Telegram.TelegramDesktop", matchClass=True)
   time.sleep(0.1)
   keyboard.send_keys("<ctrl>+v")
   time.sleep(0.1)
